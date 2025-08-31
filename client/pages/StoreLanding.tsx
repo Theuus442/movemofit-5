@@ -76,9 +76,9 @@ export default function StoreLanding() {
     <div className="relative min-h-screen bg-black text-white">
       {/* BACKGROUND EFFECTS */}
       <div aria-hidden className="pointer-events-none fixed inset-0 -z-10">
-        <div className="absolute -top-32 left-1/2 h-80 w-[36rem] -translate-x-1/2 rounded-full blur-3xl" style={{ background: "radial-gradient(60% 60% at 50% 50%, rgba(0,255,200,0.25) 0%, rgba(0,0,0,0) 70%)" }} />
+        <div className="absolute -top-32 left-1/2 h-80 w-[36rem] -translate-x-1/2 rounded-full blur-3xl" style={{ background: "radial-gradient(60% 60% at 50% 50%, rgba(10,30,90,0.25) 0%, rgba(0,0,0,0) 70%)" }} />
         <div className="absolute top-1/3 -left-20 h-72 w-72 rounded-full blur-3xl" style={{ background: "radial-gradient(50% 50% at 50% 50%, rgba(120,0,255,0.25) 0%, rgba(0,0,0,0) 70%)" }} />
-        <div className="absolute bottom-0 right-0 h-96 w-[32rem] translate-y-1/3 rounded-full blur-3xl" style={{ background: "radial-gradient(50% 50% at 50% 50%, rgba(0,160,255,0.22) 0%, rgba(0,0,0,0) 70%)" }} />
+        <div className="absolute bottom-0 right-0 h-96 w-[32rem] translate-y-1/3 rounded-full blur-3xl" style={{ background: "radial-gradient(50% 50% at 50% 50%, rgba(10,25,80,0.22) 0%, rgba(0,0,0,0) 70%)" }} />
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.06)_1px,transparent_1px)] bg-[size:36px_36px] opacity-[0.06]" />
       </div>
 
@@ -88,7 +88,7 @@ export default function StoreLanding() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <img src="/logo-icon.svg" alt="Movemofit" className="h-6 w-auto" />
-              <span className="bg-gradient-to-r from-white via-cyan-200 to-violet-200 bg-clip-text text-base md:text-lg font-extrabold lowercase text-transparent">movemofit</span>
+              <span className="bg-gradient-to-r from-white via-blue-800 to-indigo-900 bg-clip-text text-base md:text-lg font-extrabold lowercase text-transparent">movemofit</span>
             </div>
             <div className="flex items-center gap-2">
               <Badge variant="promo">Edição Neon</Badge>
@@ -103,7 +103,7 @@ export default function StoreLanding() {
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div>
             <h1 className="text-5xl font-extrabold tracking-tight md:text-7xl">
-              <span className="bg-gradient-to-br from-cyan-200 via-white to-violet-200 bg-clip-text text-transparent">Evolua</span>{" "}
+              <span className="bg-gradient-to-br from-blue-700 via-white to-indigo-900 bg-clip-text text-transparent">Evolua</span>{" "}
               com um kit que trabalha por você
             </h1>
             <p className="mt-4 text-white/80">Seleção compacta e eficiente. Menos distração, mais resultado. Descubra o essencial para força, cardio e mobilidade.</p>
@@ -116,7 +116,7 @@ export default function StoreLanding() {
               </a>
             </div>
             <div className="mt-6 flex flex-wrap items-center gap-2 text-sm text-white/70">
-              <span className="inline-flex items-center gap-1"><Sparkles className="h-4 w-4 text-cyan-300"/> Qualidade testada</span>
+              <span className="inline-flex items-center gap-1"><Sparkles className="h-4 w-4 text-blue-700"/> Qualidade testada</span>
               <span className="inline-flex items-center gap-1"><Flame className="h-4 w-4 text-rose-300"/> Pronto para treinar</span>
               <span className="inline-flex items-center gap-1"><Wind className="h-4 w-4 text-violet-300"/> Envio rápido</span>
             </div>
@@ -167,7 +167,7 @@ export default function StoreLanding() {
                 <div className="inline-flex items-center gap-2 rounded-full bg-black/60 px-3 py-1 backdrop-blur">
                   <span className="text-sm font-semibold text-white">{p.name}</span>
                   <span className="text-xs text-white/70">{p.desc}</span>
-                  <MoveRight className="h-4 w-4 text-cyan-300" />
+                  <MoveRight className="h-4 w-4 text-blue-700" />
                 </div>
               </div>
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />

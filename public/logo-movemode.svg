@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240" height="48" viewBox="0 0 240 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Move Mode Fit</title>
+  <desc id="desc">Logotipo Move Mode Fit com gradiente neon ciano para violeta</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="240" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00FFC8"/>
+      <stop offset="1" stop-color="#7800FF"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b" />
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Emblema -->
+  <g transform="translate(0,0)">
+    <rect x="2" y="2" width="44" height="44" rx="10" stroke="url(#g2)" stroke-width="2.5" fill="rgba(0,0,0,0.2)"/>
+    <!-- Monograma M -->
+    <path d="M12 35 V13 L24 24 L36 13 V35" stroke="url(#g2)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  </g>
+  <!-- Wordmark -->
+  <g transform="translate(56,10)">
+    <path d="M0 24 L0 4 L8 16 L16 4 L16 24" stroke="url(#g)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="22" y="4" width="3" height="20" fill="url(#g)"/>
+    <rect x="27" y="4" width="12" height="3" fill="url(#g)"/>
+    <rect x="27" y="21" width="12" height="3" fill="url(#g)"/>
+    <rect x="36" y="4" width="3" height="20" fill="url(#g)"/>
+    <path d="M48 24 V4 H60 C65 4 68 7 68 12 C68 17 65 20 60 20 H51" stroke="url(#g)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M78 24 V4 H90 C95 4 98 7 98 12 C98 17 95 20 90 20 H81" stroke="url(#g)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M108 24 V4 H126" stroke="url(#g)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

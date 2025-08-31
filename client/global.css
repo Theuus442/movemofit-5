@@ -67,6 +67,10 @@
 
     --equilibrio: 158 65% 45%;
     --equilibrio-foreground: 0 0% 98%;
+
+    /* Promo badge color (teal/cyan) */
+    --promo: 188 80% 42%;
+    --promo-foreground: 0 0% 100%;
   }
 
   /* Dynamic theme overrides via data-theme on body */

@@ -69,6 +69,10 @@ export default {
           DEFAULT: "hsl(var(--equilibrio))",
           foreground: "hsl(var(--equilibrio-foreground))",
         },
+        promo: {
+          DEFAULT: "hsl(var(--promo))",
+          foreground: "hsl(var(--promo-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

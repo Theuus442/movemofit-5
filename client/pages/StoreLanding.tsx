@@ -91,7 +91,7 @@ export default function StoreLanding() {
               <span className="bg-gradient-to-r from-white via-cyan-200 to-violet-200 bg-clip-text text-base md:text-lg font-extrabold lowercase text-transparent">movemofit</span>
             </div>
             <div className="flex items-center gap-2">
-              <Badge variant="secondary" className="bg-white/10 text-white">Edição Neon</Badge>
+              <Badge variant="promo">Edição Neon</Badge>
               <a href="https://movemodefit.com.br/" target="_blank" rel="noopener noreferrer" className="rounded-full bg-primary px-3 py-1.5 text-sm font-semibold text-primary-foreground" onClick={() => track({ action: "nav_loja", category: "ecommerce" })}>Loja</a>
             </div>
           </div>
@@ -129,6 +129,7 @@ export default function StoreLanding() {
                     <img src={p.img} alt={p.name} loading="lazy" className="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                     <div className="absolute bottom-2 left-2 flex items-center gap-2">
+                      <Badge variant="promo">-10% HOJE</Badge>
                       <Badge className="bg-white/15 text-white" variant="secondary">{p.name}</Badge>
                     </div>
                   </div>
@@ -144,11 +145,11 @@ export default function StoreLanding() {
         <div className="mx-auto max-w-4xl">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <h2 className="text-2xl font-bold md:text-3xl">Escolha por objetivo</h2>
-            <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 p-1">
-              <button onClick={() => setFilter("all")} className={`rounded-full px-4 py-1.5 text-sm ${filter === 'all' ? 'bg-white text-black' : 'text-white/90 hover:bg-white/10'}`}>Todos</button>
-              <button onClick={() => setFilter("forca")} className={`inline-flex items-center gap-1 rounded-full px-4 py-1.5 text-sm ${filter === 'forca' ? 'bg-white text-black' : 'text-white/90 hover:bg-white/10'}`}><Flame className="h-4 w-4"/> Força</button>
-              <button onClick={() => setFilter("cardio")} className={`inline-flex items-center gap-1 rounded-full px-4 py-1.5 text-sm ${filter === 'cardio' ? 'bg-white text-black' : 'text-white/90 hover:bg-white/10'}`}><Wind className="h-4 w-4"/> Cardio</button>
-              <button onClick={() => setFilter("mobilidade")} className={`inline-flex items-center gap-1 rounded-full px-4 py-1.5 text-sm ${filter === 'mobilidade' ? 'bg-white text-black' : 'text-white/90 hover:bg-white/10'}`}><StretchHorizontal className="h-4 w-4"/> Mobilidade</button>
+            <div className="flex items-center gap-2 rounded-full border border-promo/40 bg-white/5 p-1">
+              <button onClick={() => setFilter("all")} className={`rounded-full px-4 py-1.5 text-sm ${filter === 'all' ? 'bg-promo text-promo-foreground' : 'text-white/90 hover:bg-promo/20'}`}>Todos</button>
+              <button onClick={() => setFilter("forca")} className={`inline-flex items-center gap-1 rounded-full px-4 py-1.5 text-sm ${filter === 'forca' ? 'bg-promo text-promo-foreground' : 'text-white/90 hover:bg-promo/20'}`}><Flame className="h-4 w-4"/> Força</button>
+              <button onClick={() => setFilter("cardio")} className={`inline-flex items-center gap-1 rounded-full px-4 py-1.5 text-sm ${filter === 'cardio' ? 'bg-promo text-promo-foreground' : 'text-white/90 hover:bg-promo/20'}`}><Wind className="h-4 w-4"/> Cardio</button>
+              <button onClick={() => setFilter("mobilidade")} className={`inline-flex items-center gap-1 rounded-full px-4 py-1.5 text-sm ${filter === 'mobilidade' ? 'bg-promo text-promo-foreground' : 'text-white/90 hover:bg-promo/20'}`}><StretchHorizontal className="h-4 w-4"/> Mobilidade</button>
             </div>
           </div>
         </div>
